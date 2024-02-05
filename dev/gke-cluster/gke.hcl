@@ -1,11 +1,11 @@
 terraform {
-    source = "${local.base_source_url}?ref=v1.0.0"
+    source = "${local.base_source_url}?ref=main"
 }
 
 locals {
-    base_source_url = "git::git@github.com:ugogineering/gke-module.git//gke-module"
+    base_source_url = "git::https://github.com/ugogineering/gke-module.git//"
 }
 
-inputs {
+inputs = {
     project_id = "myterraformpractice"
 }
