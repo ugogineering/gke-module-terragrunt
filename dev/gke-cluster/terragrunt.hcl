@@ -1,6 +1,7 @@
 include "root" {
     path = find_in_parent_folders()
 }
+
 terraform {
     source = "${local.base_source_url}?ref=main"
 }
