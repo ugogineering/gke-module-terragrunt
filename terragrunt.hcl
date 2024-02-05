@@ -11,8 +11,8 @@ locals {
 generate "provider" {
     path = "provider.tf"
     if_exists = "overwrite_terragrunt"
-    contents = <<<EOF
-provider "aws" {
+    contents = <<EOF
+provider "google" {
     region = "${local.gcp_region}"
 }
 EOF
