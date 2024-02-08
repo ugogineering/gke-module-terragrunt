@@ -3,5 +3,7 @@ include "root" {
 }
 
 inputs = {
-    project_id = "myterraformpractice"
+    # I do not think that the below line is used for now with the current arrangement 
+    # with main.tf file.
+    #project_id = "myterraformpractice"
 }
