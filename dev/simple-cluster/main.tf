@@ -7,5 +7,5 @@ module "cluster" {
 module "node-pool" {
   source = "git::https://github.com/ugogineering/test-modules.git//node-pool?ref=create-node-pool-module"
   project_id = var.project_id
-  cluster_name = module.cluster.cluster_name 
+  cluster = module.cluster.cluster_name 
 }
