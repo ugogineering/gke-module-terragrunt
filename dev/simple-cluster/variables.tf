@@ -8,3 +8,8 @@ variable "project_id" {
   type = string 
   default = "" #Input correct project ID value here.
 }
+variable "cluster_name" {
+  description = "Cluster name"
+  type = string
+  default = "gke-module-cluster"
+}
