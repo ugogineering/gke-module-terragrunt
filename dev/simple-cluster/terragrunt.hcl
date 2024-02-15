@@ -6,6 +6,7 @@ inputs = {
     # I do not think that the below line is used for now with the current arrangement 
     # with main.tf file.
     #project_id = "myterraformpractice"
-    name = var.cluster_name
-    location = var.zone
+    #cluster_name = "my-gke-cluster"
+    #location = "us-east1-a"
+    #zone = "us-east1-a"
 }

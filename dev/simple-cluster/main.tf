@@ -4,6 +4,6 @@ module "cluster" {
 }
 module "node-pool" {
   source = "git::https://github.com/ugogineering/test-modules.git//node-pool?ref=use-node-pool-module"
-  cluster = module.cluster.id
+  #cluster = module.cluster.id
   depends_on = [module.cluster]
 }
