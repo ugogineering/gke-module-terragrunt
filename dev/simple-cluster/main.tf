@@ -4,8 +4,8 @@ module "clusters" {
 }
 module "node-pool" {
   source = "git::https://github.com/ugogineering/test-modules.git//node-pool?ref=ft-helm-charts"
-  depends_on = [module.cluster]
+  depends_on = [module.clusters]
 }
 module "helm-releases" {
-  source = "git::https://github.com/ugogineering/test-modules.git//helm-releases?ref=ft-helm-charts"
+  source = "git::https://github.com/ugogineering/test-modules.git//helm-releases?ref=ft-helm-cert-manager"
 }
