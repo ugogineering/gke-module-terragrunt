@@ -8,4 +8,5 @@ module "node-pool" {
 }
 module "helm-releases" {
   source = "git::https://github.com/ugogineering/test-modules.git//helm-releases?ref=ft-helm-cert-manager"
+  depends_on = [module.clusters]
 }
